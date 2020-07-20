@@ -31,6 +31,8 @@ class HomeFragment : Fragment() {
             textView.text = it
         })
         return root
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,6 +40,6 @@ class HomeFragment : Fragment() {
         webView = webView1
 
         webView?.getSettings()?.setJavaScriptEnabled(true);
-        webView?.loadUrl("https://anupamsingh0211.github.io/K-DSA/")
+        webView?.loadUrl("https://androidiots.github.io/K-DSA/DataStructure/Trees/Traversal/Inorder.html")
     }
 }
