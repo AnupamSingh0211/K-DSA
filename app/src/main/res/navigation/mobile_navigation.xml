@@ -31,9 +31,9 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.hala.k_dsa.ui.gallery.GalleryFragment"
+        android:name="com.hala.k_dsa.ui.optionlist.OptionsListFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_options_list" />
 
     <fragment
         android:id="@+id/nav_slideshow"
