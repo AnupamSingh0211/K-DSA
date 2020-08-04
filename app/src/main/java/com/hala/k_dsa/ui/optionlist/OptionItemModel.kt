@@ -8,7 +8,7 @@ import android.os.Parcelable
  * @since 04/08/20
  */
 
-data class OptionItemModel(val key: String?, val value: Any?, val path: String? = null) : Parcelable {
+data class OptionItemModel(val key: String?, val value: Any? = null, val path: String? = "") : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString()

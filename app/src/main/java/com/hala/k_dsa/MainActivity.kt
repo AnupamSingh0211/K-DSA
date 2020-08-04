@@ -69,8 +69,6 @@ class MainActivity : AppCompatActivity() {
                     // ...
                 }
                 else {
-
-                    Toast.makeText(this,task.result.toString(),Toast.LENGTH_SHORT).show()
                     renderLandingScreen(task.result  as HashMap<String, Any>)
                 }
                 // ...
@@ -97,14 +95,6 @@ class MainActivity : AppCompatActivity() {
 
         val outState = Bundle()
         outState.putParcelableArrayList("listOptions",optionsList)
-
-      //    val bundle = ("listOptions" to optionsList)
-//
-
-//        val map = LinkedHashMap<String, Any>()
-//       val wrap = ParcelableMap<String,Any>(result)
-//        val bundle = bundleOf("listOptions" to wrap)
-//        val bundle= Bundle().putParcelable("listOptions", wrap)
 
        findNavController(R.id.nav_host_fragment).navigate(R.id.nav_gallery,outState)
 
